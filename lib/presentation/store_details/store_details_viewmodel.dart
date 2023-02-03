@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'dart:ffi';
+import 'package:web_ffi/web_ffi.dart';
 
 import 'package:advanced_flutter_arabic/domain/model/models.dart';
 import 'package:advanced_flutter_arabic/domain/usecase/home_usecase.dart';

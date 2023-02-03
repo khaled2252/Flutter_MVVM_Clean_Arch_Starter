@@ -4,11 +4,7 @@ abstract class NetworkInfo {
   Future<bool> get isConnected;
 }
 
-class NetworkInfoImpl implements NetworkInfo {
-  final InternetConnectionChecker _internetConnectionChecker;
-
-  NetworkInfoImpl(this._internetConnectionChecker);
-
+class NetworkInfoImpl implements NetworkInfo { //Todo replace InternetConnectionChecker with another that works for web, now it returns true in all cases
   @override
-  Future<bool> get isConnected => _internetConnectionChecker.hasConnection;
+  Future<bool> get isConnected => Future.value(true);
 }

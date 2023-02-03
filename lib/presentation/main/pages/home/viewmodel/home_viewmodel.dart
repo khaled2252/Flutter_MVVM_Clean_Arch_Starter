@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'dart:ffi';
 
 import 'package:advanced_flutter_arabic/domain/model/models.dart';
 import 'package:advanced_flutter_arabic/domain/usecase/home_usecase.dart';
 import 'package:advanced_flutter_arabic/presentation/base/baseviewmodel.dart';
 import 'package:rxdart/rxdart.dart';
+import 'package:web_ffi/web_ffi.dart';
 
 import '../../../../common/state_renderer/state_renderer.dart';
 import '../../../../common/state_renderer/state_renderer_impl.dart';

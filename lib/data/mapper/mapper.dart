@@ -45,8 +45,8 @@ extension ServiceResponseMapper on ServiceResponse? {
 extension StoreResponseMapper on StoreResponse? {
   Store toDomain() {
     return Store(
-        this?.id.orZero() ?? Constants.zero,
-        this?.title.orEmpty() ?? Constants.empty,
+        this?.id ?? Constants.zero,
+        this?.title ?? Constants.empty,
         this?.image.orEmpty() ?? Constants.empty);
   }
 }

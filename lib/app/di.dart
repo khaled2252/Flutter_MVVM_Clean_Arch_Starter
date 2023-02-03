@@ -39,7 +39,7 @@ Future<void> initAppModule() async {
 
   // network info
   instance.registerLazySingleton<NetworkInfo>(
-      () => NetworkInfoImpl(InternetConnectionChecker()));
+      () => NetworkInfoImpl());
 
   // dio factory
   instance.registerLazySingleton<DioFactory>(() => DioFactory(instance()));
